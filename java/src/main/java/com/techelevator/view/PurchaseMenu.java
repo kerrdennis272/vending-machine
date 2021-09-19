@@ -59,14 +59,8 @@ public class PurchaseMenu extends Menu{
 
         //used for keeping track of whether the input corresponds to the item position ID
         boolean isSelectionValid = false;
-        //String to replace old list entry
-        String updatedInventory = "";
-        //Set to -1 so we can update the correct index of the vendingMachine List
-        int itemCount = -1;
         //Checks user selection against all item ID's in list
         for (Item item : list){
-            //keeps track of index
-            itemCount++;
             //Match found, set boolean to true
             if (item.getPosition().equals(selection)){
                 isSelectionValid = true;
